@@ -29,7 +29,12 @@ class GenerateQR : Fragment() {
 
         val message = "binayshaw7777@gmail.com"
 
-        binding.qr.setImageBitmap(generateQrCode(message))
+        val encryption = Encryption.getDefault("Key", "Salt", ByteArray(16))
+
+        val encrypted = encryption.encryptOrNull(message)
+        val decrypted = encryption.decryptOrNull(encrypted)
+
+        binding.qr.setImageBitmap(generateQrCode(encrypted))
 
         return binding.root
     }
