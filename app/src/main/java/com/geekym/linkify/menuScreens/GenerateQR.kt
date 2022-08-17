@@ -1,4 +1,4 @@
-package com.geekym.linkify
+package com.geekym.linkify.menuScreens
 
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.geekym.linkify.helper.Encryption
 import com.geekym.linkify.databinding.FragmentGenerateQrBinding
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.EncodeHintType

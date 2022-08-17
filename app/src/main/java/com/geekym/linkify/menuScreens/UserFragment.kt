@@ -1,15 +1,15 @@
-package com.geekym.linkify
+package com.geekym.linkify.menuScreens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.geekym.linkify.databinding.FragmentHomeBinding
+import com.geekym.linkify.databinding.FragmentUserBinding
 
-class HomeFragment : Fragment() {
+class UserFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentUserBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +17,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentUserBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

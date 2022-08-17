@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/genQR"
-        android:name="com.geekym.linkify.GenerateQR"
+        android:name="com.geekym.linkify.menuScreens.GenerateQR"
         android:label="fragment_generate_qr"
         tools:layout="@layout/fragment_generate_qr" />
     <fragment
         android:id="@+id/history"
-        android:name="com.geekym.linkify.HistoryFragment"
+        android:name="com.geekym.linkify.menuScreens.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/user"
-        android:name="com.geekym.linkify.UserFragment"
+        android:name="com.geekym.linkify.menuScreens.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
     <fragment
         android:id="@+id/home"
-        android:name="com.geekym.linkify.HomeFragment"
+        android:name="com.geekym.linkify.menuScreens.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

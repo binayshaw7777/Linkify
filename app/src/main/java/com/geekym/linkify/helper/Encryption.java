@@ -1,4 +1,4 @@
-package com.geekym.linkify;
+package com.geekym.linkify.helper;
 
 import android.util.Base64;
 
