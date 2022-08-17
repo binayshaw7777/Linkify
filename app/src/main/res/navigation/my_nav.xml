@@ -9,7 +9,13 @@
         android:id="@+id/genQR"
         android:name="com.geekym.linkify.menuScreens.GenerateQR"
         android:label="fragment_generate_qr"
-        tools:layout="@layout/fragment_generate_qr" />
+        tools:layout="@layout/fragment_generate_qr" >
+        <action
+            android:id="@+id/action_genQR_to_scannerQR"
+            app:destination="@id/scannerQR"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
     <fragment
         android:id="@+id/history"
         android:name="com.geekym.linkify.menuScreens.HistoryFragment"
@@ -25,4 +31,9 @@
         android:name="com.geekym.linkify.menuScreens.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/scannerQR"
+        android:name="com.geekym.linkify.menuScreens.ScannerQR"
+        android:label="fragment_scanner_qr"
+        tools:layout="@layout/fragment_scanner_qr" />
 </navigation>

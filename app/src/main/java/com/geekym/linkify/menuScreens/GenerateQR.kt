@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import com.geekym.linkify.R
 import com.geekym.linkify.helper.Encryption
 import com.geekym.linkify.databinding.FragmentGenerateQrBinding
 import com.google.zxing.BarcodeFormat
@@ -35,6 +37,8 @@ class GenerateQR : Fragment() {
         val decrypted = encryption.decryptOrNull(encrypted)
 
         binding.qr.setImageBitmap(generateQrCode(encrypted))
+
+        binding.scanButton.setOnClickListener { Navigation.findNavController(binding.root).navigate(R.id.action_genQR_to_scannerQR) }
 
         return binding.root
     }
