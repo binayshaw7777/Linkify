@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat
 import com.geekym.linkify.R
 import com.geekym.linkify.databinding.FragmentGenerateQrBinding
 import com.geekym.linkify.databinding.FragmentScannerQrBinding
+import com.geekym.linkify.helper.Encryption
 import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
@@ -172,7 +173,9 @@ class ScannerQR : Fragment() {
             .addOnSuccessListener { barcodes ->
                 val barcode = barcodes.getOrNull(0)
                 barcode?.rawValue?.let { code ->
-                    scanResultTextView.text = code
+                    val encryption = Encryption.getDefault("Key", "Salt", ByteArray(16))
+                    val decrypted = encryption.decryptOrNull(code)
+                    scanResultTextView.text = decrypted
                 }
             }
             .addOnFailureListener {

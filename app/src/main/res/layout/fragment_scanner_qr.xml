@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
+        android:text="Text"
         android:textSize="19sp"
         tools:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
