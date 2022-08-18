@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/button_rounded.xml" value="0.1945" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/corner_shape.xml" value="0.167" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_scanner_qr.xml" value="0.20416666666666666" />
