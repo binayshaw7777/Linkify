@@ -209,4 +209,9 @@ class ScannerQR : Fragment() {
         ContextCompat.checkSelfPermission(requireActivity(), Manifest.permission.CAMERA)
     } == PackageManager.PERMISSION_GRANTED
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }

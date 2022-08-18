@@ -38,7 +38,9 @@ class GenerateQR : Fragment() {
 
         binding.qr.setImageBitmap(generateQrCode(encrypted))
 
-        binding.scanButton.setOnClickListener { Navigation.findNavController(binding.root).navigate(R.id.action_genQR_to_scannerQR) }
+        binding.scanButton.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.action_genQR_to_scannerQR)
+        }
 
         return binding.root
     }
