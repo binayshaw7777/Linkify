@@ -13,8 +13,10 @@
         <action
             android:id="@+id/action_genQR_to_scannerQR"
             app:destination="@id/scannerQR"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:restoreState="true"
+            app:popUpTo="@id/genQR"
+            app:popUpToSaveState="true"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/history"
