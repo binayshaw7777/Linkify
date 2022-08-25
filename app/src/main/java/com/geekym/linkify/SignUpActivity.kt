@@ -18,11 +18,17 @@ class SignUpActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        binding.SignIn.setOnClickListener {
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.createAccount.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finishAffinity()
         }
+
 
 
     }
