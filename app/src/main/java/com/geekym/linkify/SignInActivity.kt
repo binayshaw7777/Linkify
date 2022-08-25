@@ -17,10 +17,9 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        firebaseAuth = FirebaseAuth.getInstance()
-
         supportActionBar?.hide()
+
+        initialization()
 
         binding.createNew.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
@@ -36,18 +35,31 @@ class SignInActivity : AppCompatActivity() {
 
                     firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful) {
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                        } else {
+                            if (firebaseAuth.currentUser?.isEmailVerified!!) {
+                                startActivity(Intent(this, MainActivity::class.java))
+                            } else {
+                                val u = firebaseAuth.currentUser
+                                u?.sendEmailVerification()
+                                Toast.makeText(
+                                    this,
+                                    "Email Verification sent to your mail",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            }
+                        } else
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-                        }
                     }
                 } else {
                     Toast.makeText(this, "Password length must be greater than 8", Toast.LENGTH_SHORT).show()
                 }
+
             } else {
                 Toast.makeText(this, "Please enter the details!", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    private fun initialization() {
+        firebaseAuth = FirebaseAuth.getInstance()
     }
 }
