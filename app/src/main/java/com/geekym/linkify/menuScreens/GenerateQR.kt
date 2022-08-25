@@ -34,7 +34,6 @@ class GenerateQR : Fragment() {
         val encryption = Encryption.getDefault("Key", "Salt", ByteArray(16))
 
         val encrypted = encryption.encryptOrNull(message)
-//        val decrypted = encryption.decryptOrNull(encrypted)
 
         binding.qr.setImageBitmap(generateQrCode(encrypted))
 
