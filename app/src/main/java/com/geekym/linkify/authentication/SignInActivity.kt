@@ -1,11 +1,11 @@
-package com.geekym.linkify
+package com.geekym.linkify.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.geekym.linkify.MainActivity
 import com.geekym.linkify.databinding.ActivitySignInBinding
-import com.geekym.linkify.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInActivity : AppCompatActivity() {
@@ -22,8 +22,11 @@ class SignInActivity : AppCompatActivity() {
         initialization()
 
         binding.createNew.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
+
+        binding.forgotPassword.setOnClickListener {
+            startActivity(Intent(this, Forgot_Password::class.java))
         }
 
         binding.loginButton.setOnClickListener {

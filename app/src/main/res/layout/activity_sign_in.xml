@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SignInActivity">
+    tools:context=".authentication.SignInActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -43,9 +43,9 @@
                 android:id="@+id/signUph2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/dm_sans"
-                android:text="Create an account"
+                android:text="Log in to your account"
                 android:textColor="@color/dark"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/signUpHeader"

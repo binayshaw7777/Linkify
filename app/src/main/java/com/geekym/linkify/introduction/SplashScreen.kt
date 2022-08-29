@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.geekym.linkify.R
-import com.geekym.linkify.SignInActivity
 
 class SplashScreen : AppCompatActivity() {
 

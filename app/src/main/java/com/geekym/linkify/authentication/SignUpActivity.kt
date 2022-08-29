@@ -1,16 +1,15 @@
-package com.geekym.linkify
+package com.geekym.linkify.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.geekym.linkify.databinding.ActivityMainBinding
+import com.geekym.linkify.User
 import com.geekym.linkify.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.storage.StorageReference
 
 class SignUpActivity : AppCompatActivity() {
 
