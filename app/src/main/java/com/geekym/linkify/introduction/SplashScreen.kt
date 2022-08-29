@@ -1,9 +1,11 @@
-package com.geekym.linkify
+package com.geekym.linkify.introduction
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.geekym.linkify.R
+import com.geekym.linkify.SignInActivity
 
 class SplashScreen : AppCompatActivity() {
 
@@ -19,7 +21,7 @@ class SplashScreen : AppCompatActivity() {
         handler.postDelayed({
 
             // Delay and Start Activity
-            val intent = Intent(this, SignInActivity::class.java)
+            val intent = Intent(this, Onboarding::class.java)
             startActivity(intent)
             finish()
         } , 1500) // here we're delaying to startActivity after 2 seconds

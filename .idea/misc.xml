@@ -8,9 +8,13 @@
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/card_sheet.xml" value="0.1945" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/corner_shape.xml" value="0.167" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/hide.xml" value="0.1445" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/indicator_active_background.xml" value="0.148" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.148" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/onboarding_3.xml" value="0.1255" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/show.xml" value="0.169" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/drawable/textbox.xml" value="0.169" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_onboarding.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_scanner_qr.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_sign_in.xml" value="0.16" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/activity_sign_up.xml" value="0.13243243243243244" />
@@ -21,6 +25,7 @@
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/fragment_scanner_q_r.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/fragment_scanner_qr.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/fragment_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/layout/onboarding_item_container.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Linkify/app/src/main/res/menu/bottom_menu.xml" value="0.203125" />
       </map>
     </option>
