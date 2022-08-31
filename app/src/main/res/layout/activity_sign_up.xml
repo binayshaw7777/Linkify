@@ -180,5 +180,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/authentication_illustration_2" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
